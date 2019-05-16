@@ -1,0 +1,809 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E3C3468228D7861000D2547 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3C3467228D7861000D2547 /* AppDelegate.swift */; };
+		1E3C346D228D7861000D2547 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E3C346B228D7861000D2547 /* Main.storyboard */; };
+		1E3C3470228D7861000D2547 /* devTrombi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1E3C346E228D7861000D2547 /* devTrombi.xcdatamodeld */; };
+		1E3C3472228D7862000D2547 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E3C3471228D7862000D2547 /* Assets.xcassets */; };
+		1E3C3475228D7862000D2547 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E3C3473228D7862000D2547 /* LaunchScreen.storyboard */; };
+		1E3C3480228D7862000D2547 /* devTrombiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3C347F228D7862000D2547 /* devTrombiTests.swift */; };
+		1E3C348B228D7862000D2547 /* devTrombiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3C348A228D7862000D2547 /* devTrombiUITests.swift */; };
+		1E3C349C228D78E0000D2547 /* DevTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3C349B228D78E0000D2547 /* DevTableViewController.swift */; };
+		1E3C349E228D792A000D2547 /* DevDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3C349D228D792A000D2547 /* DevDetailsViewController.swift */; };
+		1E3C34A1228D7998000D2547 /* Developer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3C34A0228D7998000D2547 /* Developer.swift */; };
+		1E3C34A5228D7A8D000D2547 /* DevelopersContainerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3C34A4228D7A8D000D2547 /* DevelopersContainerProtocol.swift */; };
+		1E3C34A7228D7B3E000D2547 /* ApiServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3C34A6228D7B3E000D2547 /* ApiServiceProtocol.swift */; };
+		1E3C34A9228D7C02000D2547 /* DevelopersContainerFromApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3C34A8228D7C02000D2547 /* DevelopersContainerFromApi.swift */; };
+		1E3C34AB228D7FD8000D2547 /* ApiServiceFromAlamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3C34AA228D7FD8000D2547 /* ApiServiceFromAlamofire.swift */; };
+		1E3C34AD228D82EA000D2547 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3C34AC228D82EA000D2547 /* extension.swift */; };
+		207485DB3990042B34BABCEC /* Pods_devTrombiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 541C2F51F1A268C96FBA9E07 /* Pods_devTrombiTests.framework */; };
+		60ADB67AA35E2C8A69F991AD /* Pods_devTrombiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62EA672DFD04AD83F86F3E23 /* Pods_devTrombiUITests.framework */; };
+		8B09B92C34997D58EFABD34D /* Pods_devTrombi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC07C90E25E3CBD5EE9CEEFC /* Pods_devTrombi.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E3C347C228D7862000D2547 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E3C345C228D7861000D2547 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E3C3463228D7861000D2547;
+			remoteInfo = devTrombi;
+		};
+		1E3C3487228D7862000D2547 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E3C345C228D7861000D2547 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E3C3463228D7861000D2547;
+			remoteInfo = devTrombi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E5FD196DFF2E7A6E2BD5F43 /* Pods-devTrombiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devTrombiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-devTrombiUITests/Pods-devTrombiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		12FEB34C74275E69707EDBE5 /* Pods-devTrombiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devTrombiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-devTrombiTests/Pods-devTrombiTests.release.xcconfig"; sourceTree = "<group>"; };
+		1E3C3464228D7861000D2547 /* devTrombi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = devTrombi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E3C3467228D7861000D2547 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1E3C346C228D7861000D2547 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1E3C346F228D7861000D2547 /* devTrombi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = devTrombi.xcdatamodel; sourceTree = "<group>"; };
+		1E3C3471228D7862000D2547 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E3C3474228D7862000D2547 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1E3C3476228D7862000D2547 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E3C347B228D7862000D2547 /* devTrombiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = devTrombiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E3C347F228D7862000D2547 /* devTrombiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = devTrombiTests.swift; sourceTree = "<group>"; };
+		1E3C3481228D7862000D2547 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E3C3486228D7862000D2547 /* devTrombiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = devTrombiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E3C348A228D7862000D2547 /* devTrombiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = devTrombiUITests.swift; sourceTree = "<group>"; };
+		1E3C348C228D7862000D2547 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E3C349B228D78E0000D2547 /* DevTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevTableViewController.swift; sourceTree = "<group>"; };
+		1E3C349D228D792A000D2547 /* DevDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevDetailsViewController.swift; sourceTree = "<group>"; };
+		1E3C34A0228D7998000D2547 /* Developer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Developer.swift; sourceTree = "<group>"; };
+		1E3C34A4228D7A8D000D2547 /* DevelopersContainerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopersContainerProtocol.swift; sourceTree = "<group>"; };
+		1E3C34A6228D7B3E000D2547 /* ApiServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceProtocol.swift; sourceTree = "<group>"; };
+		1E3C34A8228D7C02000D2547 /* DevelopersContainerFromApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopersContainerFromApi.swift; sourceTree = "<group>"; };
+		1E3C34AA228D7FD8000D2547 /* ApiServiceFromAlamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceFromAlamofire.swift; sourceTree = "<group>"; };
+		1E3C34AC228D82EA000D2547 /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
+		533A743BD3AAC8FEE911BCA9 /* Pods-devTrombiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devTrombiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-devTrombiUITests/Pods-devTrombiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		541C2F51F1A268C96FBA9E07 /* Pods_devTrombiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_devTrombiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62EA672DFD04AD83F86F3E23 /* Pods_devTrombiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_devTrombiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8544038D35117C79B3A7EEC7 /* Pods-devTrombi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devTrombi.release.xcconfig"; path = "Pods/Target Support Files/Pods-devTrombi/Pods-devTrombi.release.xcconfig"; sourceTree = "<group>"; };
+		860A3291EB0F8F7F971E218E /* Pods-devTrombi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devTrombi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-devTrombi/Pods-devTrombi.debug.xcconfig"; sourceTree = "<group>"; };
+		976E6C164A1D05686A04F862 /* Pods-devTrombiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devTrombiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-devTrombiTests/Pods-devTrombiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FC07C90E25E3CBD5EE9CEEFC /* Pods_devTrombi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_devTrombi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E3C3461228D7861000D2547 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B09B92C34997D58EFABD34D /* Pods_devTrombi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E3C3478228D7862000D2547 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				207485DB3990042B34BABCEC /* Pods_devTrombiTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E3C3483228D7862000D2547 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60ADB67AA35E2C8A69F991AD /* Pods_devTrombiUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E3C345B228D7861000D2547 = {
+			isa = PBXGroup;
+			children = (
+				1E3C3466228D7861000D2547 /* devTrombi */,
+				1E3C347E228D7862000D2547 /* devTrombiTests */,
+				1E3C3489228D7862000D2547 /* devTrombiUITests */,
+				1E3C3465228D7861000D2547 /* Products */,
+				6A502AD5D9B81FE654454F5B /* Pods */,
+				2BE6AC0DF489D44B866270A2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1E3C3465228D7861000D2547 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E3C3464228D7861000D2547 /* devTrombi.app */,
+				1E3C347B228D7862000D2547 /* devTrombiTests.xctest */,
+				1E3C3486228D7862000D2547 /* devTrombiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E3C3466228D7861000D2547 /* devTrombi */ = {
+			isa = PBXGroup;
+			children = (
+				1E3C34A3228D7A67000D2547 /* Services */,
+				1E3C34A2228D7A5A000D2547 /* Containers */,
+				1E3C349F228D7979000D2547 /* Models */,
+				1E3C349A228D78BA000D2547 /* ViewControllers */,
+				1E3C3467228D7861000D2547 /* AppDelegate.swift */,
+				1E3C346B228D7861000D2547 /* Main.storyboard */,
+				1E3C3471228D7862000D2547 /* Assets.xcassets */,
+				1E3C3473228D7862000D2547 /* LaunchScreen.storyboard */,
+				1E3C3476228D7862000D2547 /* Info.plist */,
+				1E3C346E228D7861000D2547 /* devTrombi.xcdatamodeld */,
+			);
+			path = devTrombi;
+			sourceTree = "<group>";
+		};
+		1E3C347E228D7862000D2547 /* devTrombiTests */ = {
+			isa = PBXGroup;
+			children = (
+				1E3C347F228D7862000D2547 /* devTrombiTests.swift */,
+				1E3C3481228D7862000D2547 /* Info.plist */,
+			);
+			path = devTrombiTests;
+			sourceTree = "<group>";
+		};
+		1E3C3489228D7862000D2547 /* devTrombiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1E3C348A228D7862000D2547 /* devTrombiUITests.swift */,
+				1E3C348C228D7862000D2547 /* Info.plist */,
+			);
+			path = devTrombiUITests;
+			sourceTree = "<group>";
+		};
+		1E3C349A228D78BA000D2547 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1E3C349B228D78E0000D2547 /* DevTableViewController.swift */,
+				1E3C349D228D792A000D2547 /* DevDetailsViewController.swift */,
+				1E3C34AC228D82EA000D2547 /* extension.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1E3C349F228D7979000D2547 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1E3C34A0228D7998000D2547 /* Developer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1E3C34A2228D7A5A000D2547 /* Containers */ = {
+			isa = PBXGroup;
+			children = (
+				1E3C34A4228D7A8D000D2547 /* DevelopersContainerProtocol.swift */,
+				1E3C34A8228D7C02000D2547 /* DevelopersContainerFromApi.swift */,
+			);
+			path = Containers;
+			sourceTree = "<group>";
+		};
+		1E3C34A3228D7A67000D2547 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1E3C34A6228D7B3E000D2547 /* ApiServiceProtocol.swift */,
+				1E3C34AA228D7FD8000D2547 /* ApiServiceFromAlamofire.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2BE6AC0DF489D44B866270A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC07C90E25E3CBD5EE9CEEFC /* Pods_devTrombi.framework */,
+				541C2F51F1A268C96FBA9E07 /* Pods_devTrombiTests.framework */,
+				62EA672DFD04AD83F86F3E23 /* Pods_devTrombiUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A502AD5D9B81FE654454F5B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				860A3291EB0F8F7F971E218E /* Pods-devTrombi.debug.xcconfig */,
+				8544038D35117C79B3A7EEC7 /* Pods-devTrombi.release.xcconfig */,
+				976E6C164A1D05686A04F862 /* Pods-devTrombiTests.debug.xcconfig */,
+				12FEB34C74275E69707EDBE5 /* Pods-devTrombiTests.release.xcconfig */,
+				533A743BD3AAC8FEE911BCA9 /* Pods-devTrombiUITests.debug.xcconfig */,
+				0E5FD196DFF2E7A6E2BD5F43 /* Pods-devTrombiUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1E3C3463228D7861000D2547 /* devTrombi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E3C348F228D7862000D2547 /* Build configuration list for PBXNativeTarget "devTrombi" */;
+			buildPhases = (
+				C48A437C5EAB712DB54C9A7F /* [CP] Check Pods Manifest.lock */,
+				1E3C3460228D7861000D2547 /* Sources */,
+				1E3C3461228D7861000D2547 /* Frameworks */,
+				1E3C3462228D7861000D2547 /* Resources */,
+				0FEFC348E39A13E9C82AABC4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = devTrombi;
+			productName = devTrombi;
+			productReference = 1E3C3464228D7861000D2547 /* devTrombi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1E3C347A228D7862000D2547 /* devTrombiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E3C3492228D7862000D2547 /* Build configuration list for PBXNativeTarget "devTrombiTests" */;
+			buildPhases = (
+				109DD159CF1416148C8C3C29 /* [CP] Check Pods Manifest.lock */,
+				1E3C3477228D7862000D2547 /* Sources */,
+				1E3C3478228D7862000D2547 /* Frameworks */,
+				1E3C3479228D7862000D2547 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E3C347D228D7862000D2547 /* PBXTargetDependency */,
+			);
+			name = devTrombiTests;
+			productName = devTrombiTests;
+			productReference = 1E3C347B228D7862000D2547 /* devTrombiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1E3C3485228D7862000D2547 /* devTrombiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E3C3495228D7862000D2547 /* Build configuration list for PBXNativeTarget "devTrombiUITests" */;
+			buildPhases = (
+				B442DB64B82FB46BB12F09FC /* [CP] Check Pods Manifest.lock */,
+				1E3C3482228D7862000D2547 /* Sources */,
+				1E3C3483228D7862000D2547 /* Frameworks */,
+				1E3C3484228D7862000D2547 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E3C3488228D7862000D2547 /* PBXTargetDependency */,
+			);
+			name = devTrombiUITests;
+			productName = devTrombiUITests;
+			productReference = 1E3C3486228D7862000D2547 /* devTrombiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1E3C345C228D7861000D2547 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "celine dann";
+				TargetAttributes = {
+					1E3C3463228D7861000D2547 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					1E3C347A228D7862000D2547 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 1E3C3463228D7861000D2547;
+					};
+					1E3C3485228D7862000D2547 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 1E3C3463228D7861000D2547;
+					};
+				};
+			};
+			buildConfigurationList = 1E3C345F228D7861000D2547 /* Build configuration list for PBXProject "devTrombi" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1E3C345B228D7861000D2547;
+			productRefGroup = 1E3C3465228D7861000D2547 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E3C3463228D7861000D2547 /* devTrombi */,
+				1E3C347A228D7862000D2547 /* devTrombiTests */,
+				1E3C3485228D7862000D2547 /* devTrombiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1E3C3462228D7861000D2547 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E3C3475228D7862000D2547 /* LaunchScreen.storyboard in Resources */,
+				1E3C3472228D7862000D2547 /* Assets.xcassets in Resources */,
+				1E3C346D228D7861000D2547 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E3C3479228D7862000D2547 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E3C3484228D7862000D2547 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0FEFC348E39A13E9C82AABC4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-devTrombi/Pods-devTrombi-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-devTrombi/Pods-devTrombi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		109DD159CF1416148C8C3C29 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-devTrombiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B442DB64B82FB46BB12F09FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-devTrombiUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C48A437C5EAB712DB54C9A7F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-devTrombi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E3C3460228D7861000D2547 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E3C34A1228D7998000D2547 /* Developer.swift in Sources */,
+				1E3C34AB228D7FD8000D2547 /* ApiServiceFromAlamofire.swift in Sources */,
+				1E3C34A5228D7A8D000D2547 /* DevelopersContainerProtocol.swift in Sources */,
+				1E3C34A9228D7C02000D2547 /* DevelopersContainerFromApi.swift in Sources */,
+				1E3C3470228D7861000D2547 /* devTrombi.xcdatamodeld in Sources */,
+				1E3C34AD228D82EA000D2547 /* extension.swift in Sources */,
+				1E3C349E228D792A000D2547 /* DevDetailsViewController.swift in Sources */,
+				1E3C349C228D78E0000D2547 /* DevTableViewController.swift in Sources */,
+				1E3C34A7228D7B3E000D2547 /* ApiServiceProtocol.swift in Sources */,
+				1E3C3468228D7861000D2547 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E3C3477228D7862000D2547 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E3C3480228D7862000D2547 /* devTrombiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E3C3482228D7862000D2547 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E3C348B228D7862000D2547 /* devTrombiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E3C347D228D7862000D2547 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E3C3463228D7861000D2547 /* devTrombi */;
+			targetProxy = 1E3C347C228D7862000D2547 /* PBXContainerItemProxy */;
+		};
+		1E3C3488228D7862000D2547 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E3C3463228D7861000D2547 /* devTrombi */;
+			targetProxy = 1E3C3487228D7862000D2547 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1E3C346B228D7861000D2547 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E3C346C228D7861000D2547 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1E3C3473228D7862000D2547 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E3C3474228D7862000D2547 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1E3C348D228D7862000D2547 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1E3C348E228D7862000D2547 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1E3C3490228D7862000D2547 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 860A3291EB0F8F7F971E218E /* Pods-devTrombi.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R738Y2P3HV;
+				INFOPLIST_FILE = devTrombi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = celadappe.devTrombi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1E3C3491228D7862000D2547 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8544038D35117C79B3A7EEC7 /* Pods-devTrombi.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R738Y2P3HV;
+				INFOPLIST_FILE = devTrombi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = celadappe.devTrombi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1E3C3493228D7862000D2547 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 976E6C164A1D05686A04F862 /* Pods-devTrombiTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R738Y2P3HV;
+				INFOPLIST_FILE = devTrombiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = celadappe.devTrombiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/devTrombi.app/devTrombi";
+			};
+			name = Debug;
+		};
+		1E3C3494228D7862000D2547 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12FEB34C74275E69707EDBE5 /* Pods-devTrombiTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R738Y2P3HV;
+				INFOPLIST_FILE = devTrombiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = celadappe.devTrombiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/devTrombi.app/devTrombi";
+			};
+			name = Release;
+		};
+		1E3C3496228D7862000D2547 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 533A743BD3AAC8FEE911BCA9 /* Pods-devTrombiUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R738Y2P3HV;
+				INFOPLIST_FILE = devTrombiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = celadappe.devTrombiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = devTrombi;
+			};
+			name = Debug;
+		};
+		1E3C3497228D7862000D2547 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E5FD196DFF2E7A6E2BD5F43 /* Pods-devTrombiUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R738Y2P3HV;
+				INFOPLIST_FILE = devTrombiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = celadappe.devTrombiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = devTrombi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E3C345F228D7861000D2547 /* Build configuration list for PBXProject "devTrombi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E3C348D228D7862000D2547 /* Debug */,
+				1E3C348E228D7862000D2547 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E3C348F228D7862000D2547 /* Build configuration list for PBXNativeTarget "devTrombi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E3C3490228D7862000D2547 /* Debug */,
+				1E3C3491228D7862000D2547 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E3C3492228D7862000D2547 /* Build configuration list for PBXNativeTarget "devTrombiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E3C3493228D7862000D2547 /* Debug */,
+				1E3C3494228D7862000D2547 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E3C3495228D7862000D2547 /* Build configuration list for PBXNativeTarget "devTrombiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E3C3496228D7862000D2547 /* Debug */,
+				1E3C3497228D7862000D2547 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1E3C346E228D7861000D2547 /* devTrombi.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1E3C346F228D7861000D2547 /* devTrombi.xcdatamodel */,
+			);
+			currentVersion = 1E3C346F228D7861000D2547 /* devTrombi.xcdatamodel */;
+			path = devTrombi.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1E3C345C228D7861000D2547 /* Project object */;
+}
